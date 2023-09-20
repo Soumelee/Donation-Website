@@ -7,8 +7,6 @@ const http = require('http').Server(app);
 const paymentRoute = require('./routes/paymentRoute');
 
 // Serve static assets from the 'assets' folder
-// app.use(express.static('assets'));
-// app.use(express.static('assets/images'));
 app.use(express.static(__dirname+'/assets'));
 
 app.use('/', paymentRoute);
